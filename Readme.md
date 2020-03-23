@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Борис Глинский](https://up.htmlacademy.ru/adaptive/19/user/1198395).
-* Наставник: `Неизвестно`.
+* Студент: [Борис Глинский](https://htmlacademy.ru/profile/colspan).
+* Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
 
