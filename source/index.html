@@ -6,7 +6,245 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header">
+      <div>
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="pognali-logo.svg" width="100" height="19" alt="Логотип 'Погнали'">
+        </a>
+      </div>
+      <button class="page-header__menu-toggle" type="button">Открыть меню</button>
+      <div class="main-menu page-header__menu">
+        <nav>
+          <ul class="site-list main-menu__list">
+            <li class="site-list__item">
+              <a href="index.html">О Сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="main-menu__authorize">
+          <a class="button" href="authorize.html">Авторизация</a>
+        </p>
+        <ul class="feedback-list main-menu__feedback">
+          <li class="feedback-list__item">
+            <a class="feedback-list__link feedback-list__link--tel" href="tel:88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="feedback-list__item">
+            <a class="feedback-list__link feedback-list__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="social-list main-menu__social">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--fb" href="facebook.com/pognali">Мы в фейсбуке</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--vk" href="vk.com/pognali">Мы во вконтакте</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--inst" href="instagram.com/pognali">Мы в инстаграме</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
+    <main class="page-main">
+      <h1 class="visually-hidden">"Погнали" - сервис по поиску попутчиков</h1>
+      
+      <section class="intro">
+        <h2 class="visually-hidden">Порядок действий</h2>
+        <p class="intro__slogan">
+          В путешествие с крутыми попутчиками!
+        </p>
+        <ul class="intro__feedback-list">
+          <li class="intro__feedback-item">
+            <a class="intro__feedback-link intro__feedback-link--tel" href="tel:88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="intro__feedback-item">
+            <a class="intro__feedback-link intro__feedback-link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <p class="intro__authorize">
+          <a class="button" href="authorize.html">Авторизация</a>
+        </p>
+        <blockquote class="intro__review">
+          <p class="intro__review-text">
+            «Лучшее приложение, 
+            что я видел в жизни!»
+          </p>
+          <cite class="intro__review-text intro__review-text--bold">
+            Мурат Эльтазин
+            главный редактор 
+            газеты «гаджетлайф»
+          </cite>
+        </blockquote>
+        <ol class="guide-list intro__guide">
+          <li class="guide-list__item">Выберите направление</li>
+          <li class="guide-list__item">Изучите идеи путешественников</li>
+          <li class="guide-list__item">Находите тех, кто похож на вас</li>
+          <li class="guide-list__item">Путешествуйте вместе!</li>
+        </ol>
+      </section>
+
+      <section class="service">
+        <h2 class="service__caption">О сервисе</h2>
+        <p class="service__desc">
+          Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+          Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+        </p>
+        <p class="service__desc service__desc--bold">
+          А если найдете кого-то 
+          близкого по духу — скорее 
+          зовите в совместный трип!
+        </p>
+      </section>
+
+      <section class="directions">
+        <h2 class="directions__caption">Направления</h2>
+        <p class="directions__desc">
+          Мы не продаем туры и ничего не рекламируем. 
+          Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+        </p>
+        <ul class="countries-list directions__countries">
+          <li class="countries-list__item countries-list__item--thailand">
+            <div class="countries-list__wrapper countries-list__wrapper--thailand">
+              <h3 class="countries-list__name">Таиланд</h3>
+              <p class="countries-list__desc">Джунгли зовут!</p>
+              <p class="countries-list__people">18321</p>
+            </div>
+          </li>
+          <li class="countries-list__item countries-list__item--france">
+            <div class="countries-list__wrapper countries-list__wrapper--france">
+              <h3 class="countries-list__name">Франция</h3>
+              <p class="countries-list__desc">Трэ бьен, манифик!</p>
+              <p class="countries-list__people">12518</p>
+            </div>
+          </li>
+          <li class="countries-list__item countries-list__item--czech">
+            <div class="countries-list__wrapper countries-list__wrapper--czech">
+              <h3 class="countries-list__name">Чехия</h3>
+              <p class="countries-list__desc">Закоулки старой Европы</p>
+              <p class="countries-list__people">5326</p>
+            </div>
+          </li>
+        </ul>
+        <p class="directions__button">
+          <a class="button button--show-all" href="catalog.html">Показать все</a>
+        </p>
+      </section>
+
+      <section class="members">
+        <h2 class="members__caption">Попутчики</h2>
+        <p class="members__desc">
+          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. 
+          Одному нужен пляж и коктейль, а другому маршрут для хайкинга. 
+        </p>
+        <p class="members__desc members__desc--bold">
+          Теперь можно легко найти единомышленников!
+        </p>
+        <ul class="notable-members-list members__list">
+          <li class="notable-members-list__item">
+            <img class="notable-members-list__image" src="firsova.jpg" width="270" height="270" alt="Фото Тани Фирсовой, плавающей в море">
+            <div class="notable-members-list__wrapper">
+              <ul class="member-countries-list notable-members-list__countries">
+                <li class="member-countries-list__item member-countries-list__item--shri-lanka">Шри-Ланка</li>
+                <li class="member-countries-list__item member-countries-list__item--thailand">Таиланд</li>
+                <li class="member-countries-list__item member-countries-list__item--seychelles">Сейшелы</li>
+              </ul>
+              <h3 class="notable-members-list__member-name">Таня Фирсова</h3>
+              <p class="notable-members-list__member-level">
+                <span class="level">99</span> level
+              </p>
+              <p class="notable-members-list__member-hashtags">
+                #ЗОЖ #ПП #Фитнес #пляж  
+                #авокадо #смузи
+              </p>
+              <ul class="member-transport-list notable-members-list__member-transport">
+                <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
+                <li class="member-transport-list__item member-transport-list__item--bus">На автобусе</li>
+                <li class="member-transport-list__item member-transport-list__item--bicycle">На велосипеде</li> 
+                <li class="member-transport-list__item member-transport-list__item--by-foot">Пешком</li>
+              </ul>
+            </div>
+          </li>
+          <li class="notable-members-list__item">
+            <img class="notable-members-list__image" src="demin.jpg" width="270" height="270" alt="Фото Пети Демина в шапке и солнцезащитных очках">
+            <div class="notable-members-list__wrapper">
+              <ul class="member-countries-list notable-members-list__countries">
+                <li class="member-countries-list__item member-countries-list__item--belgium">Бельгия</li>
+                <li class="member-countries-list__item member-countries-list__item--czech">Чехия</li>
+              </ul>
+              <h3 class="notable-members-list__member-name">Петя Демин</h3>
+              <p class="notable-members-list__member-level">
+                <span class="level">80</span> level
+              </p>
+              <p class="notable-members-list__member-hashtags">
+                #бургер #бар #футбол 
+                #концерт #крафт
+              </p>
+              <ul class="member-transport-list notable-members-list__member-transport">
+                <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
+                <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--bus">На автобусе</li>
+                <li class="member-transport-list__item member-transport-list__item--bicycle">На велосипеде</li> 
+                <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--by-foot">Пешком</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <p class="members__button">
+          <a class="button button--show-all" href="form.html">Показать всех</a>
+        </p>
+      </section>
+
+      <section class="profile-features">
+        <h2 class="profile-features__caption">Добавьте свой профиль</h2>
+        <ul class="profile-features__list">
+          <li class="profile-features__item">
+            Базовое размещение
+            Бесплатно
+          </li>
+          <li class="profile-features__item">
+            Вывод на первых позициях
+            99 руб./мес
+          </li>
+          <li class="profile-features__item">
+            Кастомный цвет карточки
+            59 руб./мес
+          </li>
+        </ul>
+        <p class="profile-features__business">
+          <a href="business-features.html">Показать тарифы для бизнеса</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div>
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="pognali-logo.svg" width="100" height="19" alt="Логотип 'Погнали'">
+        </a>
+      </div>
+      <ul class="social-list page-footer__social">
+        <li class="social-list__item social-list__item--footer-social">
+          <a class="social-list__link social-list__link--fb" href="facebook.com/pognali">Мы в фейсбуке</a>
+        </li>
+        <li class="social-list__item social-list__item--footer-social">
+          <a class="social-list__link social-list__link--vk" href="vk.com/pognali">Мы во вконтакте</a>
+        </li>
+        <li class="social-list__item social-list__item--footer-social">
+          <a class="social-list__link social-list__link--inst" href="instagram.com/pognali">Мы в инстаграме</a>
+        </li>
+      </ul>
+      <div class="copyright page-footer__copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link">
+          <img class="copyright__image" src="htmlacademy.svg" alt="Логотип htmlacademy">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
