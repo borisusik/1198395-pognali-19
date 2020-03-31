@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
   </head>
-  <body>
+  <body class="page">
 
-    <header class="page-header">
-      <div>
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="pognali-logo.svg" width="100" height="19" alt="Логотип 'Погнали'">
+    <header class="main-header page__header">
+      <div class="main-header__logo-holder">
+        <a class="logo main-header__logo">
+          <img class="logo__image" src="pognali-logo.svg" width="100" height="19" alt="Логотип 'Погнали'">
         </a>
       </div>
-      <button class="page-header__menu-toggle" type="button">Открыть меню</button>
-      <div class="main-menu page-header__menu">
-        <nav>
+      <button class="main-header__menu-toggle" type="button">Открыть меню</button>
+      <div class="main-menu main-header__menu">
+        <nav class="main-menu__nav">
           <ul class="site-list main-menu__list">
             <li class="site-list__item">
               <a href="index.html">О Сервисе</a>
@@ -52,164 +52,233 @@
       </div>
     </header>
 
-    <main class="page-main">
-      <h1 class="page-main__caption">Попутчики</h1>
+    <main class="page__main">
+      <h1 class="page__caption">Попутчики</h1>
 
       <section class="catalog">
+        <h2 class="visually-hidden">Профили членов клуба</h2>
         <ul class="catalog__list">
-          <li class="member-card catalog__item">
-            <div class="member-card__wrapper-top">
-              <img class="member-card__image" src="firsova.jpg">
-              <div class="member-card__container">
+          <li class="catalog__item">
+            <article class="member-card">
+              <header class="member-card__header">
+                <a class="member-card__link" href="firsova.html">
+                  <img class="member-card__image" src="firsova.jpg" alt="Профиль Тани Фирсовой">
+                </a>
                 <h3 class="member-card__name">Таня Фирсова</h3>
-                <p class="member-card__like member-card__like--popular">1,5 м</p>
-              </div>
-            </div>
-            <p class="member-card__hashtags">
-              #ЗОЖ #ПП #Фитнес #пляж  
-              #авокадо #смузи
-            </p>
-            <div class="member-card__wish-list">
-              <span class="member-card__text">Хочет посетить:</span>
-              <ul class="member-countries-list member-card__countries">
-                <li class="member-countries-list__item member-countries-list__item--shri-lanka">Шри-Ланка</li>
-                <li class="member-countries-list__item member-countries-list__item--thailand">Таиланд</li>
-                <li class="member-countries-list__item member-countries-list__item--seychelles">Сейшелы</li>
+                <p class="profile-like member-card__like">
+                  <a class="profile-like__button profile-like__button--popular" href="firsova.html">1,5 м</a>
+                </p>
+              </header>
+              <ul class="hashtags-list member-card__hashtags">
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#ЗОЖ</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#ПП</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#Фитнес</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#пляж</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#авокадо</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#смузи</a>
+                </li>
               </ul>
-            </div>
-            <div class="member-card__wrapper-bottom">
-              <div class="member-card__transport">
-                <span class="member-card__text">Транспорт:</span>
-                <ul class="member-transport-list member-card__transport-list">
-                  <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
-                  <li class="member-transport-list__item member-transport-list__item--bus">На автобусе</li>
-                  <li class="member-transport-list__item member-transport-list__item--bicycle">На велосипеде</li> 
-                  <li class="member-transport-list__item member-transport-list__item--by-foot">Пешком</li>
-                </ul>
-              </div>
-              <div class="member-card__level">
-                <span class="member-card__text">Левел:</span>
-                <span class="member-card__number">99</span>
-              </div>
-            </div>
-            <p class="member-card__button">
-              <a class="button" href="add.html">Позвать!</a>
-            </p>
+              <ul class="preference-list member-card__preferences">
+                <li class="preference-list__item">
+                  <p class="preference-list__text">Хочет посетить:</p>
+                  <ul class="member-countries-list preference-list__countries">
+                    <li class="member-countries-list__item member-countries-list__item--shri-lanka">Шри-Ланка</li>
+                    <li class="member-countries-list__item member-countries-list__item--thailand">Таиланд</li>
+                    <li class="member-countries-list__item member-countries-list__item--seychelles">Сейшелы</li>
+                  </ul>
+                </li>
+                <li class="preference-list__item preference-list__item--left">
+                  <p class="preference-list__text">Транспорт:</p>
+                  <ul class="member-transport-list preference-list__transport-list">
+                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
+                    <li class="member-transport-list__item member-transport-list__item--bus">На автобусе</li>
+                    <li class="member-transport-list__item member-transport-list__item--bicycle">На велосипеде</li>
+                    <li class="member-transport-list__item member-transport-list__item--by-foot">Пешком</li>
+                  </ul>
+                </li>
+                <li class="preference-list__item preference-list__item--right">
+                  <p class="preference-list__text">Левел:</p>
+                  <svg class="profile-level preference-list__level"></svg>
+                </li>
+              </ul>
+              <p class="member-card__button">
+                <a class="button" href="add.html">Позвать!</a>
+              </p>
+            </article>
           </li>
-          <li class="member-card catalog__item">
-            <div class="member-card__wrapper-top">
-              <img class="member-card__image" src="demin.jpg">
-              <div class="member-card__container">
+          <li class="catalog__item">
+            <article class="member-card">
+              <header class="member-card__header">
+                <a class="member-card__link" href="demin.html">
+                  <img class="member-card__image" src="demin.jpg" alt="Профиль Пети Демина">
+                </a>
                 <h3 class="member-card__name">Петя Демин</h3>
-                <p class="member-card__like">1500</p>
-              </div>
-            </div>
-            <p class="member-card__hashtags">
-              #бургер #бар #футбол 
-              #концерт #крафт
-            </p>
-            <div class="member-card__wish-list">
-              <span class="member-card__text">Хочет посетить:</span>
-              <ul class="member-countries-list member-card__countries">
-                <li class="member-countries-list__item member-countries-list__item--belgium">Бельгия</li>
-                <li class="member-countries-list__item member-countries-list__item--czech">Чехия</li>
+                <p class="profile-like member-card__like">
+                  <a class="profile-like__button" href="demin.html">1500</a>
+                </p>
+              </header>
+              <ul class="hashtags-list member-card__hashtags">
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#бургер</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#бар</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#футбол</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#концерт</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#крафт</a>
+                </li>
               </ul>
-            </div>
-            <div class="member-card__wrapper-bottom">
-              <div class="member-card__transport">
-                <span class="member-card__text">Транспорт:</span>
-                <ul class="member-transport-list member-card__transport-list">
-                  <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
-                  <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--bus">На автобусе</li>
-                  <li class="member-transport-list__item member-transport-list__item--bicycle">На велосипеде</li> 
-                  <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--by-foot">Пешком</li>
-                </ul>
-              </div>
-              <div class="member-card__level">
-                <span class="member-card__text">Левел:</span>
-                <span class="member-card__number">80</span>
-              </div>
-            </div>
-            <p class="member-card__button">
-              <a class="button" href="add.html">Позвать!</a>
-            </p>
+              <ul class="preference-list member-card__preferences">
+                <li class="preference-list__item">
+                  <p class="preference-list__text">Хочет посетить:</p>
+                  <ul class="member-countries-list preference-list__countries">
+                    <li class="member-countries-list__item member-countries-list__item--belgium">Бельгия</li>
+                    <li class="member-countries-list__item member-countries-list__item--czech">Чехия</li>
+                  </ul>
+                </li>
+                <li class="preference-list__item preference-list__item--left">
+                  <p class="preference-list__text">Транспорт:</p>
+                  <ul class="member-transport-list preference-list__transport-list">
+                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
+                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--bus">На автобусе</li>
+                    <li class="member-transport-list__item member-transport-list__item--bicycle">На велосипеде</li>
+                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--by-foot">Пешком</li>
+                  </ul>
+                </li>
+                <li class="preference-list__item preference-list__item--right">
+                  <p class="preference-list__text">Левел:</p>
+                  <svg class="profile-level preference-list__level"></svg>
+                </li>
+              </ul>
+              <p class="member-card__button">
+                <a class="button" href="add.html">Позвать!</a>
+              </p>
+            </article>
           </li>
-          <li class="member-card catalog__item">
-            <div class="member-card__wrapper-top">
-              <img class="member-card__image" src="smolov.jpg">
-              <div class="member-card__container">
+          <li class="catalog__item">
+            <article class="member-card">
+              <header class="member-card__header">
+                <a class="member-card__link" href="smolov.html">
+                  <img class="member-card__image" src="smolov.jpg" alt="Профиль Марка Смолова">
+                </a>
                 <h3 class="member-card__name">Марк Смолов</h3>
-                <p class="member-card__like">170</p>
-              </div>
-            </div>
-            <p class="member-card__hashtags">
-              #рэп #тату #хайпбист 
-              #кроссовки #суприм
-            </p>
-            <div class="member-card__wish-list">
-              <span class="member-card__text">Хочет посетить:</span>
-              <ul class="member-countries-list member-card__countries">
-                <li class="member-countries-list__item member-countries-list__item--usa">США</li>
-                <li class="member-countries-list__item member-countries-list__item--australia">Австралия</li>
-                <li class="member-countries-list__item member-countries-list__item--dominic">Доминика</li>
+                <p class="profile-like member-card__like">
+                  <a class="profile-like__button" href="firsova.html">170</a>
+                </p>
+              </header>
+              <ul class="hashtags-list member-card__hashtags">
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#рэп</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#тату</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#хайпбист</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#кроссовки</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#суприм</a>
+                </li>
               </ul>
-            </div>
-            <div class="member-card__wrapper-bottom">
-              <div class="member-card__transport">
-                <span class="member-card__text">Транспорт:</span>
-                <ul class="member-transport-list member-card__transport-list">
-                  <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
-                  <li class="member-transport-list__item member-transport-list__item--bus">На автобусе</li>
-                  <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--bicycle">На велосипеде</li> 
-                  <li class="member-transport-list__item member-transport-list__item--by-foot">Пешком</li>
-                </ul>
-              </div>
-              <div class="member-card__level">
-                <span class="member-card__text">Левел:</span>
-                <span class="member-card__number">25</span>
-              </div>
-            </div>
-            <p class="member-card__button">
-              <a class="button" href="add.html">Позвать!</a>
-            </p>
+              <ul class="preference-list member-card__preferences">
+                <li class="preference-list__item">
+                  <p class="preference-list__text">Хочет посетить:</p>
+                  <ul class="member-countries-list preference-list__countries">
+                    <li class="member-countries-list__item member-countries-list__item--usa">США</li>
+                    <li class="member-countries-list__item member-countries-list__item--australia">Австралия</li>
+                    <li class="member-countries-list__item member-countries-list__item--dominic">Доминика</li>
+                  </ul>
+                </li>
+                <li class="preference-list__item preference-list__item--left">
+                  <p class="preference-list__text">Транспорт:</p>
+                  <ul class="member-transport-list preference-list__transport-list">
+                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
+                    <li class="member-transport-list__item member-transport-list__item--bus">На автобусе</li>
+                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--bicycle">На велосипеде</li>
+                    <li class="member-transport-list__item member-transport-list__item--by-foot">Пешком</li>
+                  </ul>
+                </li>
+                <li class="preference-list__item preference-list__item--right">
+                  <p class="preference-list__text">Левел:</p>
+                  <svg class="profile-level preference-list__level"></svg>
+                </li>
+              </ul>
+              <p class="member-card__button">
+                <a class="button" href="add.html">Позвать!</a>
+              </p>
+            </article>
           </li>
-          <li class="member-card catalog__item">
-            <div class="member-card__wrapper-top">
-              <img class="member-card__image" src="rogovaya.jpg">
-              <div class="member-card__container">
+          <li class="catalog__item">
+            <article class="member-card">
+              <header class="member-card__header">
+                <a class="member-card__link" href="rogovaya.html">
+                  <img class="member-card__image" src="rogovaya.jpg" alt="Профиль Ларисы Роговой">
+                </a>
                 <h3 class="member-card__name">Лариса Роговая</h3>
-                <p class="member-card__like">23</p>
-              </div>
-            </div>
-            <p class="member-card__hashtags">
-              #образование #карьера
-              #учеба #линкедин
-            </p>
-            <div class="member-card__wish-list">
-              <span class="member-card__text">Хочет посетить:</span>
-              <ul class="member-countries-list member-card__countries">
-                <li class="member-countries-list__item member-countries-list__item--great-britain">Великобритания</li>
-                <li class="member-countries-list__item member-countries-list__item--germany">Германия</li>
+                <p class="profile-like member-card__like">
+                  <a class="profile-like__button" href="firsova.html">23</a>
+                </p>
+              </header>
+              <ul class="hashtags-list member-card__hashtags">
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#образование</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html"> #карьера</a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#учеба </a>
+                </li>
+                <li class="hashtags-list__item">
+                  <a class="hashtags-list__link" href="hashtag.html">#линкедин</a>
+                </li>
               </ul>
-            </div>
-            <div class="member-card__wrapper-bottom">
-              <div class="member-card__transport">
-                <span class="member-card__text">Транспорт:</span>
-                <ul class="member-transport-list member-card__transport-list">
-                  <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
-                  <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--bus">На автобусе</li>
-                  <li class="member-transport-list__item member-transport-list__item--bicycle">На велосипеде</li> 
-                  <li class="member-transport-list__item member-transport-list__item--by-foot">Пешком</li>
-                </ul>
-              </div>
-              <div class="member-card__level">
-                <span class="member-card__text">Левел:</span>
-                <span class="member-card__number">50</span>
-              </div>
-            </div>
-            <p class="member-card__button">
-              <a class="button" href="add.html">Позвать!</a>
-            </p>
+              <ul class="preference-list member-card__preferences">
+                <li class="preference-list__item">
+                  <p class="preference-list__text">Хочет посетить:</p>
+                  <ul class="member-countries-list preference-list__countries">
+                    <li class="member-countries-list__item member-countries-list__item--great-britain">Великобритания</li>
+                    <li class="member-countries-list__item member-countries-list__item--germany">Германия</li>
+                  </ul>
+                </li>
+                <li class="preference-list__item preference-list__item--left">
+                  <p class="preference-list__text">Транспорт:</p>
+                  <ul class="member-transport-list preference-list__transport-list">
+                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
+                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--bus">На автобусе</li>
+                    <li class="member-transport-list__item member-transport-list__item--bicycle">На велосипеде</li>
+                    <li class="member-transport-list__item member-transport-list__item--by-foot">Пешком</li>
+                  </ul>
+                </li>
+                <li class="preference-list__item preference-list__item--right">
+                  <p class="preference-list__text">Левел:</p>
+                  <svg class="profile-level preference-list__level"></svg>
+                </li>
+              </ul>
+              <p class="member-card__button">
+                <a class="button" href="add.html">Позвать!</a>
+              </p>
+            </article>
           </li>
         </ul>
         <p class="catalog__show-more">
@@ -228,13 +297,13 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <div>
-        <a class="page-footer__logo">
-          <img class="page-footer__logo-image" src="pognali-logo.svg" width="100" height="19" alt="Логотип 'Погнали'">
+    <footer class="main-footer page__footer">
+      <div class="main-footer__logo-holder">
+        <a class="logo main-footer__logo">
+          <img class="logo__image logo__image--footer" src="pognali-logo.svg" width="100" height="19" alt="Логотип 'Погнали'">
         </a>
       </div>
-      <ul class="social-list page-footer__social">
+      <ul class="social-list main-footer__social">
         <li class="social-list__item social-list__item--footer-social">
           <a class="social-list__link social-list__link--fb" href="facebook.com/pognali">Мы в фейсбуке</a>
         </li>
@@ -245,9 +314,9 @@
           <a class="social-list__link social-list__link--inst" href="instagram.com/pognali">Мы в инстаграме</a>
         </li>
       </ul>
-      <div class="copyright page-footer__copyright">
+      <div class="copyright main-footer__copyright">
         <span class="copyright__text">Разработано</span>
-        <a class="copyright__link">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="copyright__image" src="htmlacademy.svg" alt="Логотип htmlacademy">
         </a>
       </div>
