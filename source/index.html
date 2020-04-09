@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
 
     <header class="main-header page__header">
       <div class="main-header__logo-holder">
         <a class="logo main-header__logo">
-          <img class="logo__image" src="pognali-logo.svg" width="100" height="19" alt="Логотип 'Погнали'">
+          <img class="logo__image" src="../img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип 'Погнали'">
         </a>
       </div>
       <button class="main-header__menu-toggle" type="button">Открыть меню</button>
@@ -17,13 +18,13 @@
         <nav class="main-menu__nav">
           <ul class="site-list main-menu__list">
             <li class="site-list__item">
-              <a href="index.html">О Сервисе</a>
+              <a class="site-list__link" href="index.html">О Сервисе</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Направления</a>
+              <a class="site-list__link" href="form.html">Направления</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Попутчики</a>
+              <a class="site-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
         </nav>
@@ -57,55 +58,55 @@
 
       <section class="intro">
         <h2 class="visually-hidden">Порядок действий</h2>
-        <p class="intro__slogan">
+        <p class="slogan intro__slogan">
           В путешествие с крутыми попутчиками!
         </p>
-        <ul class="intro__feedback-list">
-          <li class="intro__feedback-item">
-            <a class="intro__feedback-link intro__feedback-link--tel" href="tel:88005558628">8 800 555-86-28</a>
+        <ul class="feedback-short intro__feedback-list">
+          <li class="feedback-short__item">
+            <a class="feedback-short__link feedback-short__link--tel" href="tel:88005558628">8 800 555-86-28</a>
           </li>
-          <li class="intro__feedback-item">
-            <a class="intro__feedback-link intro__feedback-link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <li class="feedback-short__item">
+            <a class="feedback-short__link feedback-short__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
         <p class="intro__authorize">
           <a class="button" href="authorize.html">Авторизация</a>
         </p>
-        <blockquote class="intro__review">
-          <p class="intro__review-text">
+        <blockquote class="review intro__review">
+          <p class="review__text">
             «Лучшее приложение,
             что я видел в жизни!»
           </p>
-          <cite class="intro__review-text intro__review-text--bold">
+          <cite class="review__text review__text--bold">
             Мурат Эльтазин
             главный редактор
             газеты «гаджетлайф»
           </cite>
         </blockquote>
         <ol class="guide-list intro__guide">
-          <li class="guide-list__item">Выберите направление</li>
-          <li class="guide-list__item">Изучите идеи путешественников</li>
-          <li class="guide-list__item">Находите тех, кто похож на вас</li>
-          <li class="guide-list__item">Путешествуйте вместе!</li>
+          <li class="guide-list__item guide-list__item--first">Выберите направление</li>
+          <li class="guide-list__item guide-list__item--second">Изучите идеи путешественников</li>
+          <li class="guide-list__item guide-list__item--third">Находите тех, кто похож на вас</li>
+          <li class="guide-list__item guide-list__item--last">Путешествуйте вместе!</li>
         </ol>
       </section>
 
-      <section class="service">
-        <h2 class="service__caption">О сервисе</h2>
-        <p class="service__desc">
+      <section class="service index-section">
+        <h2 class="service__caption index-section__caption">О сервисе</h2>
+        <p class="service__desc index-section__text">
           Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
           Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
         </p>
-        <p class="service__desc service__desc--bold">
+        <p class="service__desc index-section__text index-section__text--special">
           А если найдете кого-то
           близкого по духу — скорее
           зовите в совместный трип!
         </p>
       </section>
 
-      <section class="directions">
-        <h2 class="directions__caption">Направления</h2>
-        <p class="directions__desc">
+      <section class="directions index-section">
+        <h2 class="directions__caption index-section__caption">Направления</h2>
+        <p class="directions__desc index-section__text">
           Мы не продаем туры и ничего не рекламируем.
           Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
         </p>
@@ -137,13 +138,13 @@
         </p>
       </section>
 
-      <section class="members">
-        <h2 class="members__caption">Попутчики</h2>
-        <p class="members__desc">
+      <section class="members index-section">
+        <h2 class="members__caption index-section__caption">Попутчики</h2>
+        <p class="members__desc index-section__text">
           Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
           Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
         </p>
-        <p class="members__desc members__desc--bold">
+        <p class="members__desc index-section__text--special">
           Теперь можно легко найти единомышленников!
         </p>
         <ul class="notable-members-list members__list">
@@ -151,12 +152,12 @@
             <article class="member-preview">
               <header class="member-preview__header">
                 <a class="member-preview__link" href="demin.html">
-                  <img class="member-preview__image" src="firsova.jpg" width="270" height="270" alt="Фото Тани Фирсовой, плавающей в море">
+                  <img class="member-preview__image" src="../img/firsova-desktop@1x.jpg" width="270" height="270" alt="Фото Тани Фирсовой, плавающей в море">
                 </a>
               </header>
               <ul class="member-info-list member-preview__info">
                 <li class="member-info-list__item">
-                  <ul class="member-countries-list member-info-list__countries">
+                  <ul class="member-countries-list member-countries-list--only-flags member-info-list__countries">
                     <li class="member-countries-list__item member-countries-list__item--shri-lanka">Шри-Ланка</li>
                     <li class="member-countries-list__item member-countries-list__item--thailand">Таиланд</li>
                     <li class="member-countries-list__item member-countries-list__item--seychelles">Сейшелы</li>
@@ -207,12 +208,12 @@
             <article class="member-preview">
               <header class="member-preview__header">
                 <a class="member-preview__link" href="demin.html">
-                  <img class="member-preview__image" src="demin.jpg" width="270" height="270" alt="Фото Пети Демина в солнцезащитных очках">
+                  <img class="member-preview__image" src="../img/demin-desktop@1x.jpg" width="270" height="270" alt="Фото Пети Демина в солнцезащитных очках">
                 </a>
               </header>
               <ul class="member-info-list member-preview__info">
                 <li class="member-info-list__item">
-                  <ul class="member-countries-list member-info-list__countries">
+                  <ul class="member-countries-list member-countries-list--only-flags member-info-list__countries">
                     <li class="member-countries-list__item member-countries-list__item--germany">Шри-Ланка</li>
                     <li class="member-countries-list__item member-countries-list__item--czech">Чехия</li>
                   </ul>
@@ -261,34 +262,34 @@
         </p>
       </section>
 
-      <section class="profile-features">
-        <h2 class="profile-features__caption">Добавьте свой профиль</h2>
+      <section class="profile-features index-section">
+        <h2 class="profile-features__caption index-section__caption">Добавьте свой профиль</h2>
         <ul class="profile-features__list">
-          <li class="profile-features__item">
+          <li class="profile-features__item index-section__text">
             Базовое размещение
             Бесплатно
           </li>
-          <li class="profile-features__item">
+          <li class="profile-features__item index-section__text">
             Вывод на первых позициях
             99 руб./мес
           </li>
-          <li class="profile-features__item">
+          <li class="profile-features__item index-section__text">
             Кастомный цвет карточки
             59 руб./мес
           </li>
         </ul>
         <p class="profile-features__business">
-          <a href="business-features.html">Показать тарифы для бизнеса</a>
+          <a class="profile-features__link" href="business-features.html">Показать тарифы для бизнеса</a>
         </p>
       </section>
 
-      <section class="modal">
-        <h2 class="modal__caption">Бизнес-тарифы</h2>
+      <section class="modal index-section">
+        <h2 class="modal__caption index-section__caption">Бизнес-тарифы</h2>
         <ul class="modal__list">
-          <li class="modal__item">Реклама у блоггера 300 000 руб./пост</li>
-          <li class="modal__item">Накрутка подписчиков от 1 руб./шт.</li>
-          <li class="modal__item">Лайки от ботов от 20 коп./лайк</li>
-          <li class="modal__item">Ваш продакт-плейсмент Индивидуально</li>
+          <li class="modal__item index-section__text">Реклама у блоггера 300 000 руб./пост</li>
+          <li class="modal__item index-section__text">Накрутка подписчиков от 1 руб./шт.</li>
+          <li class="modal__item index-section__text">Лайки от ботов от 20 коп./лайк</li>
+          <li class="modal__item index-section__text">Ваш продакт-плейсмент Индивидуально</li>
         </ul>
         <button class="modal__button" type="button">Закрыть окно</button>
       </section>
@@ -338,7 +339,7 @@
     <footer class="main-footer page__footer">
       <div class="main-footer__logo-holder">
         <a class="logo main-footer__logo">
-          <img class="logo__image logo__image--footer" src="pognali-logo.svg" width="100" height="19" alt="Логотип 'Погнали'">
+          <img class="logo__image logo__image--footer" src="../img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип 'Погнали'">
         </a>
       </div>
       <ul class="social-list main-footer__social">
@@ -355,7 +356,7 @@
       <div class="copyright main-footer__copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="htmlacademy.svg" alt="Логотип htmlacademy">
+          <img class="copyright__image" src="../img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
         </a>
       </div>
     </footer>

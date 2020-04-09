@@ -1,0 +1,46 @@
+.countries-list {
+  padding-left: 0;
+
+  font-family: "Blogger Sans Medium", "Arial", sans-serif;
+  font-weight: 500;
+  color: rgba(#444444, 0.3);
+
+  list-style: none;
+}
+
+.countries-list__item {
+  min-width: 270px;
+  padding-top: 100px;
+  margin-bottom: 10px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.countries-list__item--thailand {
+  background-image: url("../img/thailand-mobile@1x.jpg");
+}
+
+.countries-list__item--france {
+  background-image: url("../img/france-mobile@1x.jpg");
+}
+
+.countries-list__item--czech {
+  background-image: url("../img/czech-mobile@1x.jpg");
+}
+
+.countries-list__wrapper {
+  padding-top: 28px;
+  padding-left: 24px;
+  padding-right: 26px;
+  padding-bottom: 25px;
+
+  background-color: #ffffff;
+}
+
+.countries-list__name {
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #161c35;
+}

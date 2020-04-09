@@ -1,0 +1,35 @@
+.guide-list {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 39px;
+
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #161c35;
+
+  background-color: #192144;
+}
+
+.guide-list__item {
+  padding-top: 23px;
+  padding-left: 25px;
+  padding-right: 90px;
+  padding-bottom: 29px;
+}
+
+.guide-list__item--first {
+  background-color: #ff8d30;
+}
+
+.guide-list__item--second {
+  background-color: #ffa530;
+}
+
+.guide-list__item--third {
+  background-color: #ffbd30;
+}
+
+.guide-list__item--last {
+  background-color: #ffd74b;
+}

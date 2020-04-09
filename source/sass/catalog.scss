@@ -1,0 +1,24 @@
+.catalog {
+  padding-top: 11px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.catalog__list {
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.catalog__item {
+  margin-bottom: 16px;
+}
+
+.catalog__button {
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  font-size: 17;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1d2e5b;
+}
