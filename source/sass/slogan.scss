@@ -1,13 +1,31 @@
 .slogan {
-  min-height: 400px;
-  padding-top: 40px;
-  padding-bottom: 250px;
+  position: relative;
+
+  padding-top: 16px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 267px;
 
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 700;
+  line-height: 40px;
+  text-align: center;
 
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0 -75px;
+}
+
+.slogan::after {
+  position: absolute;
+  bottom: 0;
+  right: 49px;
+
+  content: "";
+  width: 192px;
+  height: 255px;
+
+  background: url("../img/traveller-illustration-mobile@1x.png") 50% 50% no-repeat;
 }

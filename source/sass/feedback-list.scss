@@ -9,6 +9,12 @@
 }
 
 .feedback-list__link {
+  display: block;
+
+  padding-top: 13px;
+  padding-left: 60px;
+  padding-bottom: 13px;
+
   text-decoration: none;
   text-transform: uppercase;
   color: inherit;

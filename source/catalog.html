@@ -8,53 +8,59 @@
   <body class="page">
 
     <header class="main-header page__header">
-      <div class="main-header__logo-holder">
-        <a class="logo main-header__logo">
-          <img class="logo__image" src="../img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип 'Погнали'">
-        </a>
+      <div class="main-header__wrapper wrapper">
+        <div class="main-header__logo-holder">
+          <a class="logo main-header__logo">
+            <img class="logo__image" src="../img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип 'Погнали'">
+          </a>
+        </div>
+        <button class="main-header__menu-toggle" type="button">Открыть меню</button>
       </div>
-      <button class="main-header__menu-toggle" type="button">Открыть меню</button>
       <div class="main-menu main-header__menu">
-        <nav class="main-menu__nav">
-          <ul class="site-list main-menu__list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">О Сервисе</a>
+        <div class="main-menu__wrapper wrapper">
+          <nav class="main-menu__nav">
+            <ul class="site-list main-menu__list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">О Сервисе</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Направления</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">Попутчики</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="main-menu__authorize">
+            <a class="button" href="authorize.html">Авторизация</a>
+          </p>
+          <ul class="feedback-list main-menu__feedback">
+            <li class="feedback-list__item">
+              <a class="feedback-list__link feedback-list__link--tel" href="tel:88005558628">8 800 555-86-28</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Направления</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Попутчики</a>
+            <li class="feedback-list__item">
+              <a class="feedback-list__link feedback-list__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
-        </nav>
-        <p class="main-menu__authorize">
-          <a class="button" href="authorize.html">Авторизация</a>
-        </p>
-        <ul class="feedback-list main-menu__feedback">
-          <li class="feedback-list__item">
-            <a class="feedback-list__link feedback-list__link--tel" href="tel:88005558628">8 800 555-86-28</a>
-          </li>
-          <li class="feedback-list__item">
-            <a class="feedback-list__link feedback-list__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-        <ul class="social-list main-menu__social">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--fb" href="facebook.com/pognali">Мы в фейсбуке</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk" href="vk.com/pognali">Мы во вконтакте</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--inst" href="instagram.com/pognali">Мы в инстаграме</a>
-          </li>
-        </ul>
+          <ul class="social-list main-menu__social">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--fb" href="facebook.com/pognali">Мы в фейсбуке</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--vk" href="vk.com/pognali">Мы во вконтакте</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--inst" href="instagram.com/pognali">Мы в инстаграме</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main class="catalog-page page__main">
-      <h1 class="main-caption page__caption">Попутчики</h1>
+      <div class="catalog-page__wrapper">
+        <h1 class="main-caption page__caption wrapper">Попутчики</h1>
+      </div>
 
       <section class="country-filter">
         <header class="country-filter__header">
@@ -372,269 +378,273 @@
       </section>
 
       <section class="catalog">
-        <h2 class="visually-hidden">Профили членов клуба</h2>
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <article class="member-card">
-              <header class="member-card__header">
-                <a class="member-card__link" href="firsova.html">
-                  <img class="member-card__image" src="../img/firsova-mobile@1x.jpg" width="70" height="70" alt="Профиль Тани Фирсовой">
-                </a>
-                <h3 class="member-card__name">Таня Фирсова</h3>
-                <p class="profile-like member-card__like">
-                  <a class="profile-like__button profile-like__button--popular" href="firsova.html">1,5 м</a>
+        <div class="catalog__wrapper wrapper">
+          <h2 class="visually-hidden">Профили членов клуба</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <article class="member-card">
+                <header class="member-card__header">
+                  <a class="member-card__link" href="firsova.html">
+                    <img class="member-card__image" src="../img/firsova-mobile@1x.jpg" width="70" height="70" alt="Профиль Тани Фирсовой">
+                  </a>
+                  <div class="member-card__profile">
+                    <h3 class="member-card__name">Таня Фирсова</h3>
+                    <a class="member-card__like" href="firsova.html">1,5 м</a>
+                  </div>
+                </header>
+                <ul class="hashtags-list hashtags-list--member-card member-card__hashtags">
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#ЗОЖ</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#ПП</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#Фитнес</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#пляж</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#авокадо</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#смузи</a>
+                  </li>
+                </ul>
+                <ul class="preference-list member-card__preferences">
+                  <li class="preference-list__item">
+                    <p class="preference-list__text">Хочет посетить:</p>
+                    <ul class="member-countries-list preference-list__countries">
+                      <li class="member-countries-list__item member-countries-list__item--shri-lanka">Шри-Ланка</li>
+                      <li class="member-countries-list__item member-countries-list__item--thailand">Таиланд</li>
+                      <li class="member-countries-list__item member-countries-list__item--seychelles">Сейшелы</li>
+                    </ul>
+                  </li>
+                  <li class="preference-list__item preference-list__item--left">
+                    <p class="preference-list__text">Транспорт:</p>
+                    <ul class="member-transport-list preference-list__transport-list">
+                      <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
+                      <li class="member-transport-list__item member-transport-list__item--bus">На автобусе</li>
+                      <li class="member-transport-list__item member-transport-list__item--bicycle">На велосипеде</li>
+                      <li class="member-transport-list__item member-transport-list__item--by-foot">Пешком</li>
+                    </ul>
+                  </li>
+                  <li class="preference-list__item preference-list__item--right">
+                    <p class="preference-list__text">Левел:</p>
+                    <div class="profile-level preference-list__level"></div>
+                  </li>
+                </ul>
+                <p class="member-card__button">
+                  <a class="button" href="add.html">Позвать!</a>
                 </p>
-              </header>
-              <ul class="hashtags-list member-card__hashtags">
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#ЗОЖ</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#ПП</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#Фитнес</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#пляж</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#авокадо</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#смузи</a>
-                </li>
-              </ul>
-              <ul class="preference-list member-card__preferences">
-                <li class="preference-list__item">
-                  <p class="preference-list__text">Хочет посетить:</p>
-                  <ul class="member-countries-list preference-list__countries">
-                    <li class="member-countries-list__item member-countries-list__item--shri-lanka">Шри-Ланка</li>
-                    <li class="member-countries-list__item member-countries-list__item--thailand">Таиланд</li>
-                    <li class="member-countries-list__item member-countries-list__item--seychelles">Сейшелы</li>
-                  </ul>
-                </li>
-                <li class="preference-list__item preference-list__item--left">
-                  <p class="preference-list__text">Транспорт:</p>
-                  <ul class="member-transport-list preference-list__transport-list">
-                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
-                    <li class="member-transport-list__item member-transport-list__item--bus">На автобусе</li>
-                    <li class="member-transport-list__item member-transport-list__item--bicycle">На велосипеде</li>
-                    <li class="member-transport-list__item member-transport-list__item--by-foot">Пешком</li>
-                  </ul>
-                </li>
-                <li class="preference-list__item preference-list__item--right">
-                  <p class="preference-list__text">Левел:</p>
-                  <svg class="profile-level preference-list__level"></svg>
-                </li>
-              </ul>
-              <p class="member-card__button">
-                <a class="button" href="add.html">Позвать!</a>
-              </p>
-            </article>
-          </li>
-          <li class="catalog__item">
-            <article class="member-card">
-              <header class="member-card__header">
-                <a class="member-card__link" href="demin.html">
-                  <img class="member-card__image" src="../img/demin-mobile@1x.jpg" alt="Профиль Пети Демина">
-                </a>
-                <h3 class="member-card__name">Петя Демин</h3>
-                <p class="profile-like member-card__like">
-                  <a class="profile-like__button" href="demin.html">1500</a>
-                </p>
-              </header>
-              <ul class="hashtags-list member-card__hashtags">
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#бургер</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#бар</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#футбол</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#концерт</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#крафт</a>
-                </li>
-              </ul>
-              <ul class="preference-list member-card__preferences">
-                <li class="preference-list__item">
-                  <p class="preference-list__text">Хочет посетить:</p>
-                  <ul class="member-countries-list preference-list__countries">
-                    <li class="member-countries-list__item member-countries-list__item--belgium">Бельгия</li>
-                    <li class="member-countries-list__item member-countries-list__item--czech">Чехия</li>
-                  </ul>
-                </li>
-                <li class="preference-list__item preference-list__item--left">
-                  <p class="preference-list__text">Транспорт:</p>
-                  <ul class="member-transport-list preference-list__transport-list">
-                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
-                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--bus">На автобусе</li>
-                    <li class="member-transport-list__item member-transport-list__item--bicycle">На велосипеде</li>
-                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--by-foot">Пешком</li>
-                  </ul>
-                </li>
-                <li class="preference-list__item preference-list__item--right">
-                  <p class="preference-list__text">Левел:</p>
-                  <svg class="profile-level preference-list__level"></svg>
-                </li>
-              </ul>
-              <p class="member-card__button">
-                <a class="button" href="add.html">Позвать!</a>
-              </p>
-            </article>
-          </li>
-          <li class="catalog__item">
-            <article class="member-card">
-              <header class="member-card__header">
-                <a class="member-card__link" href="smolov.html">
-                  <img class="member-card__image" src="../img/smolov-mobile@1x.jpg" alt="Профиль Марка Смолова">
-                </a>
-                <h3 class="member-card__name">Марк Смолов</h3>
-                <p class="profile-like member-card__like">
-                  <a class="profile-like__button" href="firsova.html">170</a>
-                </p>
-              </header>
-              <ul class="hashtags-list member-card__hashtags">
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#рэп</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#тату</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#хайпбист</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#кроссовки</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#суприм</a>
-                </li>
-              </ul>
-              <ul class="preference-list member-card__preferences">
-                <li class="preference-list__item">
-                  <p class="preference-list__text">Хочет посетить:</p>
-                  <ul class="member-countries-list preference-list__countries">
-                    <li class="member-countries-list__item member-countries-list__item--usa">США</li>
-                    <li class="member-countries-list__item member-countries-list__item--australia">Австралия</li>
-                    <li class="member-countries-list__item member-countries-list__item--dominic">Доминика</li>
-                  </ul>
-                </li>
-                <li class="preference-list__item preference-list__item--left">
-                  <p class="preference-list__text">Транспорт:</p>
-                  <ul class="member-transport-list preference-list__transport-list">
-                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
-                    <li class="member-transport-list__item member-transport-list__item--bus">На автобусе</li>
-                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--bicycle">На велосипеде</li>
-                    <li class="member-transport-list__item member-transport-list__item--by-foot">Пешком</li>
-                  </ul>
-                </li>
-                <li class="preference-list__item preference-list__item--right">
-                  <p class="preference-list__text">Левел:</p>
-                  <svg class="profile-level preference-list__level"></svg>
-                </li>
-              </ul>
-              <p class="member-card__button">
-                <a class="button" href="add.html">Позвать!</a>
-              </p>
-            </article>
-          </li>
-          <li class="catalog__item">
-            <article class="member-card">
-              <header class="member-card__header">
-                <a class="member-card__link" href="rogovaya.html">
-                  <img class="member-card__image" src="../img/rogovaya-mobile@1x.jpg" alt="Профиль Ларисы Роговой">
-                </a>
-                <h3 class="member-card__name">Лариса Роговая</h3>
-                <p class="profile-like member-card__like">
-                  <a class="profile-like__button" href="firsova.html">23</a>
-                </p>
-              </header>
-              <ul class="hashtags-list member-card__hashtags">
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#образование</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html"> #карьера</a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#учеба </a>
-                </li>
-                <li class="hashtags-list__item">
-                  <a class="hashtags-list__link" href="hashtag.html">#линкедин</a>
-                </li>
-              </ul>
-              <ul class="preference-list member-card__preferences">
-                <li class="preference-list__item">
-                  <p class="preference-list__text">Хочет посетить:</p>
-                  <ul class="member-countries-list preference-list__countries">
-                    <li class="member-countries-list__item member-countries-list__item--great-britain">Великобритания</li>
-                    <li class="member-countries-list__item member-countries-list__item--germany">Германия</li>
-                  </ul>
-                </li>
-                <li class="preference-list__item preference-list__item--left">
-                  <p class="preference-list__text">Транспорт:</p>
-                  <ul class="member-transport-list preference-list__transport-list">
-                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
-                    <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--bus">На автобусе</li>
-                    <li class="member-transport-list__item member-transport-list__item--bicycle">На велосипеде</li>
-                    <li class="member-transport-list__item member-transport-list__item--by-foot">Пешком</li>
-                  </ul>
-                </li>
-                <li class="preference-list__item preference-list__item--right">
-                  <p class="preference-list__text">Левел:</p>
-                  <svg class="profile-level preference-list__level"></svg>
-                </li>
-              </ul>
-              <p class="member-card__button">
-                <a class="button" href="add.html">Позвать!</a>
-              </p>
-            </article>
-          </li>
-        </ul>
-        <p class="catalog__show-more">
-          <a class="catalog__button" href="all-members.html">Показать еще</a>
-        </p>
-        <div class="pagination catalog__pagination">
-          <ul class="pagination__list">
-            <li class="pagination__item">
-              <a class="pagination__arrow pagination__arrow--prev" href="#prev">Назад</a>
+              </article>
             </li>
-            <li class="pagination__item">
-              <a class="pagination__arrow pagination__arrow--next" href="#next">Вперед</a>
+            <li class="catalog__item">
+              <article class="member-card">
+                <header class="member-card__header">
+                  <a class="member-card__link" href="demin.html">
+                    <img class="member-card__image" src="../img/demin-mobile@1x.jpg" alt="Профиль Пети Демина">
+                  </a>
+                  <div class="member-card__profile">
+                    <h3 class="member-card__name">Петя Демин</h3>
+                    <a class="member-card__like" href="demin.html">1500</a>
+                  </div>
+                </header>
+                <ul class="hashtags-list hashtags-list--member-card member-card__hashtags">
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#бургер</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#бар</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#футбол</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#концерт</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#крафт</a>
+                  </li>
+                </ul>
+                <ul class="preference-list member-card__preferences">
+                  <li class="preference-list__item">
+                    <p class="preference-list__text">Хочет посетить:</p>
+                    <ul class="member-countries-list preference-list__countries">
+                      <li class="member-countries-list__item member-countries-list__item--belgium">Бельгия</li>
+                      <li class="member-countries-list__item member-countries-list__item--czech">Чехия</li>
+                    </ul>
+                  </li>
+                  <li class="preference-list__item preference-list__item--left">
+                    <p class="preference-list__text">Транспорт:</p>
+                    <ul class="member-transport-list preference-list__transport-list">
+                      <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
+                      <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--bus">На автобусе</li>
+                      <li class="member-transport-list__item member-transport-list__item--bicycle">На велосипеде</li>
+                      <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--by-foot">Пешком</li>
+                    </ul>
+                  </li>
+                  <li class="preference-list__item preference-list__item--right">
+                    <p class="preference-list__text">Левел:</p>
+                    <div class="profile-level preference-list__level"></div>
+                  </li>
+                </ul>
+                <p class="member-card__button">
+                  <a class="button" href="add.html">Позвать!</a>
+                </p>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="member-card">
+                <header class="member-card__header">
+                  <a class="member-card__link" href="smolov.html">
+                    <img class="member-card__image" src="../img/smolov-mobile@1x.jpg" alt="Профиль Марка Смолова">
+                  </a>
+                  <div class="member-card__profile">
+                    <h3 class="member-card__name">Марк Смолов</h3>
+                    <a class="member-card__like" href="smolov.html">170</a>
+                  </div>
+                </header>
+                <ul class="hashtags-list hashtags-list--member-card member-card__hashtags">
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#рэп</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#тату</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#хайпбист</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#кроссовки</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#суприм</a>
+                  </li>
+                </ul>
+                <ul class="preference-list member-card__preferences">
+                  <li class="preference-list__item">
+                    <p class="preference-list__text">Хочет посетить:</p>
+                    <ul class="member-countries-list preference-list__countries">
+                      <li class="member-countries-list__item member-countries-list__item--usa">США</li>
+                      <li class="member-countries-list__item member-countries-list__item--australia">Австралия</li>
+                      <li class="member-countries-list__item member-countries-list__item--dominic">Доминика</li>
+                    </ul>
+                  </li>
+                  <li class="preference-list__item preference-list__item--left">
+                    <p class="preference-list__text">Транспорт:</p>
+                    <ul class="member-transport-list preference-list__transport-list">
+                      <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
+                      <li class="member-transport-list__item member-transport-list__item--bus">На автобусе</li>
+                      <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--bicycle">На велосипеде</li>
+                      <li class="member-transport-list__item member-transport-list__item--by-foot">Пешком</li>
+                    </ul>
+                  </li>
+                  <li class="preference-list__item preference-list__item--right">
+                    <p class="preference-list__text">Левел:</p>
+                    <div class="profile-level preference-list__level"></div>
+                  </li>
+                </ul>
+                <p class="member-card__button">
+                  <a class="button" href="add.html">Позвать!</a>
+                </p>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="member-card">
+                <header class="member-card__header">
+                  <a class="member-card__link" href="rogovaya.html">
+                    <img class="member-card__image" src="../img/rogovaya-mobile@1x.jpg" alt="Профиль Ларисы Роговой">
+                  </a>
+                  <div class="member-card__profile">
+                    <h3 class="member-card__name">Лариса Роговая</h3>
+                    <a class="member-card__like" href="rogovaya.html">23</a>
+                  </div>
+                </header>
+                <ul class="hashtags-list member-card__hashtags">
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#образование</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html"> #карьера</a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#учеба </a>
+                  </li>
+                  <li class="hashtags-list__item">
+                    <a class="hashtags-list__link" href="hashtag.html">#линкедин</a>
+                  </li>
+                </ul>
+                <ul class="preference-list member-card__preferences">
+                  <li class="preference-list__item">
+                    <p class="preference-list__text">Хочет посетить:</p>
+                    <ul class="member-countries-list preference-list__countries">
+                      <li class="member-countries-list__item member-countries-list__item--great-britain">Великобритания</li>
+                      <li class="member-countries-list__item member-countries-list__item--germany">Германия</li>
+                    </ul>
+                  </li>
+                  <li class="preference-list__item preference-list__item--left">
+                    <p class="preference-list__text">Транспорт:</p>
+                    <ul class="member-transport-list preference-list__transport-list">
+                      <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--plane">На самолете</li>
+                      <li class="member-transport-list__item member-transport-list__item--selected member-transport-list__item--bus">На автобусе</li>
+                      <li class="member-transport-list__item member-transport-list__item--bicycle">На велосипеде</li>
+                      <li class="member-transport-list__item member-transport-list__item--by-foot">Пешком</li>
+                    </ul>
+                  </li>
+                  <li class="preference-list__item preference-list__item--right">
+                    <p class="preference-list__text">Левел:</p>
+                    <div class="profile-level preference-list__level"></div>
+                  </li>
+                </ul>
+                <p class="member-card__button">
+                  <a class="button" href="add.html">Позвать!</a>
+                </p>
+              </article>
             </li>
           </ul>
+          <p class="catalog__show-more">
+            <a class="catalog__button" href="all-members.html">Показать еще</a>
+          </p>
+          <div class="pagination catalog__pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="pagination__arrow pagination__arrow--prev" href="#prev">Назад</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__arrow pagination__arrow--next" href="#next">Вперед</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="main-footer page__footer">
-      <div class="main-footer__logo-holder">
-        <a class="logo main-footer__logo">
-          <img class="logo__image logo__image--footer" src="../img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип 'Погнали'">
-        </a>
-      </div>
-      <ul class="social-list main-footer__social">
-        <li class="social-list__item social-list__item--footer-social">
-          <a class="social-list__link social-list__link--fb" href="facebook.com/pognali">Мы в фейсбуке</a>
-        </li>
-        <li class="social-list__item social-list__item--footer-social">
-          <a class="social-list__link social-list__link--vk" href="vk.com/pognali">Мы во вконтакте</a>
-        </li>
-        <li class="social-list__item social-list__item--footer-social">
-          <a class="social-list__link social-list__link--inst" href="instagram.com/pognali">Мы в инстаграме</a>
-        </li>
-      </ul>
-      <div class="copyright main-footer__copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="../img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
-        </a>
+      <div class="main-footer__wrapper wrapper">
+        <div class="main-footer__logo-holder">
+          <a class="logo main-footer__logo">
+            <img class="logo__image logo__image--footer" src="../img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип 'Погнали'">
+          </a>
+        </div>
+        <ul class="social-list main-footer__social">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--footer social-list__link--fb" href="facebook.com/pognali">Мы в фейсбуке</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--footer social-list__link--vk" href="vk.com/pognali">Мы во вконтакте</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--footer social-list__link--inst" href="instagram.com/pognali">Мы в инстаграме</a>
+          </li>
+        </ul>
+        <div class="copyright main-footer__copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__image" src="../img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

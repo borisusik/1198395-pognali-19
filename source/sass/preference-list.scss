@@ -1,8 +1,30 @@
 .preference-list {
-  padding-left: 0;
+  position: relative;
+
+  padding-left: 8px;
 
   font-size: 15px;
   text-transform: lowercase;
 
   list-style: none;
+}
+
+.preference-list__item--right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.preference-list__text {
+  margin-top: 0;
+  margin-bottom: 17px;
+}
+
+.preference-list__countries {
+  margin-bottom: 15px;
+}
+
+.preference-list__transport-list {
+  margin-top: -1px;
+  margin-left: -1px;
 }

@@ -1,8 +1,28 @@
 .hashtags-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5px;
+
   list-style: none;
+}
+
+.hashtags-list__item {
+  margin-top: -1px;
+  margin-right: 5px;
 }
 
 .hashtags-list__link {
   color: #444444;
   text-decoration: none;
+}
+
+.hashtags-list--preview {
+  justify-content: center;
+
+  font-family: "Blogger Sans Light", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+.hashtags-list--member-card {
+  font-size: 15px;
 }

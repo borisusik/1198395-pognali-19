@@ -1,12 +1,38 @@
 .directions {
-  padding-top: 100px;
-  padding-left: 50px;
-  padding-right: 75px;
-  padding-bottom: 30px;
+  margin-top: -30px;
+  padding-top: 98px;
 
   background-color: #edeff6;
 }
 
+.directions__wrapper {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .directions__caption {
   margin-top: 0;
+  margin-left: 25px;
+  margin-bottom: 18px;
+
+  letter-spacing: 0.25px;
+}
+
+.directions__desc {
+  margin-top: 0;
+  margin-left: 25px;
+  margin-bottom: 61px;
+
+  padding-right: 50px;
+
+  line-height: 22px;
+}
+
+.directions__countries {
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+.directions__button {
+  margin-bottom: 0;
 }

@@ -1,10 +1,26 @@
 .main-menu {
-  padding-top: 70px;
-  padding-left: 25px;
-  padding-right: 25px;
+  display: block;
+  padding-top: 30px;
   padding-bottom: 40px;
 
   color: #192144;
 
   background-color: #ffffff;
+}
+
+.main-menu__wrapper {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.main-menu__list {
+  margin-bottom: 58px;
+}
+
+.main-menu__authorize {
+  margin-bottom: 50px;
+}
+
+.main-menu__feedback {
+  margin-bottom: 30px;
 }

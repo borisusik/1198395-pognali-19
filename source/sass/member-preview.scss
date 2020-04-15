@@ -1,8 +1,15 @@
 .member-preview {
+  position: relative;
+
   min-width: 270px;
   min-height: 427px;
 
   color: #444444;
 
   background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.member-preview__image {
+  border-radius: 10px 10px 0 0;
 }

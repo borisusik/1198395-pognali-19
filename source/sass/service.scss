@@ -1,12 +1,31 @@
 .service {
-  padding-top: 33px;
-  padding-left: 49px;
-  padding-right: 60px;
-  padding-bottom: 85px;
+  position: relative;
 
+  margin-top: -30px;
+  padding-top: 62px;
+  padding-bottom: 63px;
+
+  line-height: 22px;
   color: #ffffff;
 
-  background:
-    url("../img/about-mobile@1x.png") 50% 50% no-repeat,
-    linear-gradient(to bottom, #141b3b, #141b3b 40%, #192144 40%);
+  background-image: url("../img/about-mobile@1x.png");
+  background-color: #192144;
+  background-repeat: no-repeat;
+  background-position:  50.7% 30px;
+  border-radius: 30px;
+}
+
+.service__wrapper {
+  padding-left: 49px;
+  padding-right: 60px;
+}
+
+.service__caption {
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+
+.service__desc {
+  margin-top: 0;
+  margin-bottom: 19px;
 }

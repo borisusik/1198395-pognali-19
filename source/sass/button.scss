@@ -1,15 +1,37 @@
 .button {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 700;
   color: #192144;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
 
   background-color: #ffd74b;
+  border-radius: 20px;
+}
+
+.button--short {
+  padding-left: 38px;
+  padding-right: 39px;
+
+  letter-spacing: 0.17px;
 }
 
 .button--show-all {
+  padding-left: 23px;
+  padding-top: 20px;
+  padding-bottom: 21px;
+
+
   font-size: 18px;
   text-transform: initial;
+  text-align: left;
+
+  border-radius: 10px;
 }

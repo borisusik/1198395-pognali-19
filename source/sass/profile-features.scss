@@ -1,23 +1,52 @@
 .profile-features {
-  padding-top: 128px;
-  padding-left: 49px;
-  padding-right: 26px;
-  padding-bottom: 40px;
+  margin-top: -30px;
+  padding-top: 94px;
 
   background-color: #edeff6;
 }
 
+.profile-features__wrapper {
+  padding-left: 49px;
+  padding-right: 26px;
+}
+
 .profile-features__caption {
+  position: relative;
+
   margin-top: 0;
+  margin-bottom: 45px;
+  padding-left: 2px;
+  padding-right: 100px;
+
+  line-height: 24px;
+
+  background-size: contain;
+}
+
+.profile-features__caption::before {
+  position: absolute;
+  right: 0;
+  top: -13px;
+
+  content: "";
+  width: 99px;
+  height: 99px;
+
+  background: url("../img/rates@1x.png") 50% 50% no-repeat;
+  background-size: contain;
 }
 
 .profile-features__list {
-  padding-left: 0;
+  margin-bottom: 29px;
+}
 
-  list-style: none;
+.profile-features__item {
+  margin-right: 45px;
 }
 
 .profile-features__link {
+  margin-left: 1px;
+
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-weight: 700;
   color: #192144;

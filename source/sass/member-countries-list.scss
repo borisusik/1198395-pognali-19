@@ -1,9 +1,20 @@
 .member-countries-list {
+  padding-left: 0;
+
   font-family: "Blogger Sans Medium", "Arial", sans-serif;
   text-transform: uppercase;
   color: #1d2e5b;
 
   list-style: none;
+}
+
+.member-countries-list__item {
+  margin-bottom: 8px;
+  margin-right: 8px;
+  /*padding-left: 40px;*/
+
+  background-position: 0 50%;
+  background-repeat: no-repeat;
 }
 
 .member-countries-list--only-flags {

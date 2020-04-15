@@ -1,3 +1,56 @@
 .feedback-short {
-  font-size: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+
+  font-size: 0;
+}
+
+.feedback-short__link {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+}
+
+.feedback-short__link::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.feedback-short__link--tel {
+  background-color: #ff8d30;
+}
+
+.feedback-short__link--tel::before {
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  margin-left: -8px;
+
+  background: url("../img/topmenu-phone.svg") 50% 50% no-repeat;
+}
+
+.feedback-short__link--mail {
+  background-color: #ffbd30;
+}
+
+.feedback-short__link--mail::before {
+  width: 18px;
+  height: 14px;
+
+  margin-top: -7px;
+  margin-left: -9px;
+
+  background-image: url("../img/topmenu-mail.svg");
 }

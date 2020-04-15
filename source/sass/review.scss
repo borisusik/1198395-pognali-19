@@ -1,11 +1,16 @@
 .review {
-  padding-top: 50px;
   padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 115px;
+  padding-right: 100px;
+  padding-bottom: 111px;
 
   font-family: "Blogger Sans Light", "Arial", sans-serif;
   font-weight: 300;
+}
+
+.review__text {
+  margin-bottom: 18px;
+
+  line-height: 22px;
 }
 
 .review__text--bold {

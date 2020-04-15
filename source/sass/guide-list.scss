@@ -1,4 +1,7 @@
 .guide-list {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 39px;
@@ -7,15 +10,26 @@
   font-size: 18px;
   font-weight: 700;
   color: #161c35;
+  line-height: 18px;
 
-  background-color: #192144;
+  list-style: none;
 }
 
 .guide-list__item {
-  padding-top: 23px;
+  padding-top: 21px;
   padding-left: 25px;
   padding-right: 90px;
-  padding-bottom: 29px;
+  padding-bottom: 38px;
+
+  border-radius: 10px;
+}
+
+.guide-list__item:nth-child(n+2) {
+  margin-top: -15px;
+}
+
+.guide-list__item:last-child {
+  padding-bottom: 23px;
 }
 
 .guide-list__item--first {
@@ -27,6 +41,8 @@
 }
 
 .guide-list__item--third {
+  padding-right: 107px;
+
   background-color: #ffbd30;
 }
 
